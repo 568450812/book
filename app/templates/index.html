@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+    {% block content %}
+        <form action="" method="post">
+            {{form2.hidden_tag()}}
+           <p>
+                {{form2.id.label}}
+            </p>
+            <p>
+                {{form2.id(size=32)}}
+            </p>
+            <p>
+
+                {{form2.submit()}}
+            </p>
+
+            <p>
+                <a href="{{url_for('book',books=book1)}}">{{book1}}</a>
+            </p>
+            <p>
+                <a href="{{url_for('book',books=book2)}}">{{book2}}</a>
+            </p>
+            <p>
+                <a href="{{url_for('book',books=book3)}}">{{book3}}</a>
+            </p>
+        </form>
+{% endblock %}

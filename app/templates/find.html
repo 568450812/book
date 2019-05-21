@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if value %}
+    <a href="{{url_for('book',books=value)}}">{{value}}</a>
+    {% else %}
+    <p>查无此书</p>
+    {% endif %}
+</body>
+</html>
